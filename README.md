@@ -30,13 +30,19 @@ contract ImmutableRegistry {
 So, instead of sacrificing immutability and logical-content-addressability (I am funny, thanks for noticing), one signals to the world in a standard way a change in location / new version of the immutable protocol. Better composability would have it so that on such an event, all the dependents are pointed to a new address. This can be done in the dependant, which brings us the the next pattern; or on calling newOfficeAddress() if the dependents registered themselves as dependants and provided sufficient gas for their state (address pointing to protocol) to be changed. The later is slightly less problematic than the most popular patterns.
 
 _____
+### modifier isUpgradeable(*args)
+
+if (mapping[msg.sig] != address(this)) ISelf(mapping[msg.sig]).call(msg.sig, args) 
+
+
+____
 
 ### Contract type composable interface
 
 
 
 ______
-### Upgrade me please!
+### Upgrade me please! (what did I mean by this?)
 
 
 
