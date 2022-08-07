@@ -42,9 +42,17 @@ ____
 
 
 ______
-### Upgrade me please! (what did I mean by this?)
+### Upgrade me please! 
 
+Depended upon contract keeps a registry of dependables and executes on the ability of altering the known whereabouts in the dependable.
 
+```
+Contract is DependsOn(0x993231abcdef)
+DependsOn is moving
+DependsOn is a good leader and lets the sheeple know new corresponding address
+profit
+```
+maybe.
 
 _____________
 
